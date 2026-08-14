@@ -1,0 +1,54 @@
+<section>
+  <div class="container">
+    <div class="section-label">Forma de trabajo</div>
+    <h2 class="section-title">Soluciones claras, bien pensadas y enfocadas en resultados.</h2>
+
+    <div class="process">
+      <div class="process-step">
+        <small>01</small>
+        <h3>Entendemos la necesidad</h3>
+        <p>Analizamos el objetivo, el problema y el contexto del negocio antes de definir tecnología.</p>
+      </div>
+
+      <div class="process-step">
+        <small>02</small>
+        <h3>Diseñamos la solución</h3>
+        <p>Definimos una propuesta clara, simple de mantener y preparada para crecer cuando sea necesario.</p>
+      </div>
+
+      <div class="process-step">
+        <small>03</small>
+        <h3>Desarrollamos y entregamos</h3>
+        <p>Construimos, probamos y dejamos la solución lista para uso, publicación o integración con otros sistemas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.process {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.process-step {
+  padding: 28px;
+  border-left: 2px solid #1d72ff;
+  background: rgba(255,255,255,0.025);
+  border-radius: 0 18px 18px 0;
+}
+
+.process-step small { color: #62c6ff; }
+.process-step h3 { margin: 12px 0; }
+
+.process-step p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .process { grid-template-columns: 1fr; }
+}
+</style>

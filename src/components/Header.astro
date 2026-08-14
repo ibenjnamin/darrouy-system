@@ -1,0 +1,63 @@
+<header class="site-header">
+  <div class="container nav">
+    <a href="#inicio" class="brand" aria-label="DARROUY inicio">
+      <img src="/logo.png" alt="DARROUY" />
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#empresa">Empresa</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#capacidades">Capacidades</a>
+      <a href="#contacto" class="nav-button">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(18px);
+  background: rgba(3, 13, 25, 0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.055);
+}
+
+.nav {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand img {
+  width: 170px;
+  max-height: 58px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.nav-links a { transition: 0.25s ease; }
+.nav-links a:hover { color: white; }
+
+.nav-button {
+  padding: 12px 18px;
+  border: 1px solid rgba(67, 154, 255, 0.45);
+  background: rgba(20, 99, 255, 0.1);
+  color: #ddebff;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+}
+</style>

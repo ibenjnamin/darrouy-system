@@ -1,0 +1,117 @@
+---
+const services = [
+  {
+    icon: "01",
+    title: "Desarrollo Web Profesional",
+    description:
+      "Landing pages, sitios corporativos, páginas de servicios, catálogos y experiencias web modernas, rápidas y adaptadas a móviles."
+  },
+  {
+    icon: "02",
+    title: "Sistemas a Medida",
+    description:
+      "Desarrollo de soluciones web y empresariales ajustadas a procesos específicos, reglas de negocio y necesidades operativas."
+  },
+  {
+    icon: "03",
+    title: "Integraciones & APIs",
+    description:
+      "Conexión entre sistemas, consumo e implementación de APIs, intercambio de información y automatización de flujos digitales."
+  },
+  {
+    icon: "04",
+    title: "Bases de Datos",
+    description:
+      "Diseño, consultas, mantenimiento y trabajo con SQL Server, PostgreSQL y estructuras de datos para aplicaciones y sistemas."
+  },
+  {
+    icon: "05",
+    title: "Automatización de Procesos",
+    description:
+      "Digitalización de tareas repetitivas y construcción de flujos que reducen trabajo manual y mejoran la eficiencia."
+  },
+  {
+    icon: "06",
+    title: "Mantención & Evolución",
+    description:
+      "Mejoras, correcciones, modernización y evolución de soluciones existentes para mantenerlas estables y preparadas para crecer."
+  }
+];
+---
+
+<section id="servicios">
+  <div class="container">
+    <div class="section-label">Servicios</div>
+    <h2 class="section-title">Soluciones digitales para distintas necesidades.</h2>
+    <p class="section-desc">
+      Podemos comenzar por una web simple y profesional, o avanzar hacia soluciones
+      más completas con lógica de negocio, datos, integraciones y automatización.
+    </p>
+
+    <div class="services-grid">
+      {services.map((service) => (
+        <article class="service-card">
+          <div class="service-index">{service.icon}</div>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+.services-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(10, 36, 69, 0.62), rgba(5, 21, 40, 0.6));
+  transition: transform 0.32s ease, border-color 0.32s ease, box-shadow 0.32s ease;
+  animation: softGlow 6s ease-in-out infinite;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  border-color: rgba(69, 173, 255, 0.5);
+  box-shadow: 0 24px 60px rgba(0, 120, 255, 0.18);
+}
+
+.service-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: rgba(20, 99, 255, 0.12);
+  color: #64c9ff;
+  border: 1px solid rgba(88, 179, 255, 0.19);
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
+</style>

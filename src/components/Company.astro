@@ -1,0 +1,92 @@
+<section id="empresa">
+  <div class="container company-grid">
+    <div>
+      <div class="section-label">Quiénes somos</div>
+      <h2 class="section-title">
+        Desarrollo tecnológico con visión de negocio.
+      </h2>
+      <p class="section-desc">
+        DARROUY es una empresa orientada al desarrollo de soluciones digitales
+        profesionales. Combinamos experiencia en desarrollo web, aplicaciones,
+        bases de datos, automatización e integración de sistemas para construir
+        soluciones útiles, escalables y alineadas con las necesidades reales de cada cliente.
+      </p>
+    </div>
+
+    <div class="company-panel">
+      <p>
+        Nuestro enfoque no es vender tecnología por vender tecnología. Analizamos el problema,
+        definimos una solución clara y desarrollamos herramientas que ayuden a mejorar procesos,
+        centralizar información, reducir tareas manuales y entregar una mejor experiencia digital.
+      </p>
+
+      <div class="stats">
+        <div class="stat"><strong>Web</strong><span>Sitios y plataformas profesionales</span></div>
+        <div class="stat"><strong>Software</strong><span>Soluciones a medida</span></div>
+        <div class="stat"><strong>Datos</strong><span>SQL, PostgreSQL e integraciones</span></div>
+        <div class="stat"><strong>Integración</strong><span>APIs y automatización</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.company-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.company-panel {
+  padding: 34px;
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, rgba(12, 42, 78, 0.65), rgba(5, 21, 39, 0.6));
+  border-radius: var(--radius);
+}
+
+.company-panel p {
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.stat {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: transform 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+  border-color: rgba(75, 231, 255, 0.28);
+  background: rgba(20, 99, 255, 0.06);
+}
+
+@media (max-width: 900px) {
+  .company-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .stats { grid-template-columns: 1fr; }
+}
+</style>

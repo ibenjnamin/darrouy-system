@@ -1,0 +1,54 @@
+DARROUY - CONTACTO V4 (AJAX)
+
+CORREO
+------
+Destino configurado:
+i.benjaminbd@gmail.com
+
+FUNCIONAMIENTO
+--------------
+- El usuario NO abandona la web.
+- El formulario se envía en segundo plano.
+- Si se envía correctamente aparece un aviso abajo a la derecha:
+  "Correo enviado con éxito".
+- Si ocurre un error aparece un aviso de error.
+- El correo que escribe el visitante queda incluido en la consulta.
+- FormSubmit puede usar ese email como Reply-To para responder al remitente.
+
+ACTIVACIÓN INICIAL
+------------------
+FormSubmit exige confirmar el correo receptor la primera vez.
+Haz una prueba desde la web y revisa:
+i.benjaminbd@gmail.com
+
+Confirma la activación una sola vez.
+Después, el visitante no verá páginas externas durante el envío.
+
+IMPORTANTE SOBRE EL REMITENTE
+-----------------------------
+Una web pública no puede enviar legalmente un email "desde" la cuenta Gmail
+del visitante sin que ese visitante autentique su propia cuenta de correo.
+Lo correcto es recibir el formulario en DARROUY y usar el correo ingresado
+como dirección de respuesta.
+
+WHATSAPP
+--------
+Número configurado:
+56931195854
+
+El botón "Contactar por WhatsApp" es independiente del formulario.
+No exige nombre, correo, empresa ni mensaje.
+
+Al presionarlo abre WhatsApp directamente con el mensaje:
+"Hola DARROUY, quisiera solicitar información sobre sus servicios de desarrollo y soluciones digitales."
+
+Funciona con WhatsApp normal o WhatsApp Business.
+
+LEVANTAR
+--------
+npm install
+npm run dev
+
+PRODUCCIÓN
+----------
+npm run build
